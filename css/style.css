@@ -1,26 +1,7 @@
-/*
-   
-   Table Of Content
-   
-   1. Global Style
-   2. Preloader
-   3. Home Section and Navigation Menu
-   4. About Me
-   5. Portfolio
-   6. Testimonial
-   7. Statistics
-   8. Services
-   9. Call to Action
-  10. Contact Us
-  11. Social Icons
-  12. Footer
-  13. Responsive
-  14. Scroll To Top
-  15. Useful Classes ( Such as : Margin, Padding, colors  "This classes will be helpful for you during designing/development time.")
-  16. UiPasta Credit
  
+ This is Working
 
-*/
+
 
 
 
@@ -494,22 +475,26 @@ body.loaded #preloader{
 }
 
 .research {
+    background:url(images/bg/eu.jpg );
+  background-size: cover; 
 }
 
 .research-header {
-  background-color: white;
-  min-height: 200px;
-  max-height: 400px;
+  background:url(images/bg/eu.jpg);
+  background-size: cover;  
+  min-height: 100px;
+  max-height: 300px;
   text-align: center;
-  padding: 75px;
-  border: 25px solid #8b9dc3;
+  padding: 65px;
+  border-top: 3px solid #1c3266;
+  
 }
 
 .research-header h2 {
-    font-size: 50px;
+    font-size: 35px;
     text-transform: uppercase;
     text-align: center;
-    color: black;
+    color: white;
     font-weight: 700;
     letter-spacing: 4px;
     margin: 20px 0px;}
@@ -519,207 +504,234 @@ body.loaded #preloader{
   padding-left: 250px;
   font-style: italic;
   line-height: 150%;
+  color: white;
 }    
 
 
 
-/* PORTIFA (research related) */
+<!-- PROJECT BOX -->
 
-.portifa-new {
+.project-box {
+  position: absolute;
   overflow: hidden;
-  background-color: #8b9dc3;
-  min-height: 200px;
-  max-height: 600px;
+  display: none;
+  height: 200px;
 }
 
-.portifa-new img {
-  position: relative;
-}
-
-.portifa-new {
-
-}
-
-.portifa-new h2 {
-  padding: 0px 50px;
-
-  color: white;
-  font-weight: 700px;
-}
-
-.portifa-new p {
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 15px;
-  line-height: 110%;
-  color: white;
-}
-
-.portifa-new ul {
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 15px;
-  line-height: 110%;
-  text-transform: bold;
-  text-transform: capitalize;
-  color: white;
-}
-
-.portifa-new li {
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 15px;
-  line-height: 110%;
-  text-transform: bold;
-    color: white;
-}
-
-
-/* ADVERTISING */
-
-
-.ad{
-  background-color: black;
-  background-color: white;
-  min-height: 200px;
-  max-height: 400px;
+.project-box h1{
+  font-size: 22px;
+  text-transform: uppercase;
   text-align: center;
-  padding: 75px;
-  border: 25px solid #8b9dc3;
+  padding: 80px;
+  padding-bottom: 40px;
 }
-.advertising {
-    padding: 70px;
-    padding-top: 30px;
-    background-color: #24b662;
-    border-radius: 4px;
-    box-shadow: 0px 1px 2px 0px rgba(36, 182, 98, 0.15);
+
+.project-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(75,30,42,0.9);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2;
+  opacity: 0;
+  border: 4px solid transparent; 
+}
+
+.project-overlay p {
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center; 
+  right: 0px;
+  bottom: 00px;
+  color: #fff;
+}
+
+.project-overlay :hover {
+  font-style: bold;
+  color: yellow;
+  border-bottom: 1px solid ;
+
+} 
+
+
+.project-box:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-box-wrap {
+  position: relative;
+  background: #be4c6c;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 200px;
+  border-top: 3px solid #1c3266;
+}
+.project-box-wrap .row {
+  margin: 0;
+}
+.project-box-wrap .col-sm-6 {
+  padding: 5px;
+}
+
+.project-desc {
+  padding: 10px 15px;
+  background-color: #1c3266;
+  margin-bottom: 0px;
+  height: 220px;
+}
+.project-desc h4 {
+  color: #fff;
+  margin: 0;
+ 
+  padding-bottom: 10px;
+}
+.project-desc h4:after {
+  content: "";
+  width: 20px;
+  left: 0;
+  bottom: 5px;
+  height: 3px;
+  background-color: white;
+}
+.project-desc p {
+  color: #fff;
+  margin: 0;
+  font-size: 12px;
+  line-height: 150%;
+
+}
+
+
+
+.ad {
+    background-color: #f9f9f9;
     transition: all 0.3s ease-in-out;
+    align-items: right;
+    padding-bottom: 15px;
+    
 }
 
-..advertising {
-    box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
-    top: -5px;
+.ad h2 {
+    font-size: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #015311;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding-left: 0px;
+    padding-top: 40px;
+    line-height: 50%
 }
 
-.advertising-word {
-    padding: 0px 100px;
-}
-
-..advertising img {
-	margin: 0 auto;
+.ad hr {  
+  border-bottom: 10px solid #015311;
+  width: 75px;
+  margin-left: 218px;
   
 }
 
-.advertising h2 {
-    font-size: 50px;
+.ad h3 {
+    font-size: 12px;
     text-transform: uppercase;
-    text-align: center;
-	 color: #ffffff;
-    font-weight: 700;
-    letter-spacing: 4px;
-    margin: 20px 0px;
-}
-
-.advertising h3 {
-    border-left: 1px;
-    font-size: 16px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #ffffff;
+    color: #015311;
     font-weight: 400;
-    letter-spacing: 4px;
-    margin: 20px 0px;
+    padding-left: 25px;
     line-height: 20%;
 }
-
-
-.advertising p {
+.ad p {
     line-height: 25px;
-    text-align: center;
-    padding-right: 80px;
-    padding-left: 80px;
-    color: #ffffff
+    font-size: 12px;
+    color: #015311;
+    padding-left: 25px;
+    padding-right: 75px;
 }
 
+.ad a {
+    text-transform: bold;
+    font-style: italic;    }
 
-
-
+.ad-image img{
+  background-image: url(images/portfolio/workharder.jpg);
+  background-image: cover;
+  }
 
 
 /* Services */
+.skills {
 
-.competences-section {
-  background-color: #F9F9F9;
-
-
+     display: inline-block;
+     width: 33.3330%;
+     height: 100%;
+     max-height: absolute;
+     float: left;
+     margin-bottom: -999em;
+     padding-bottom: 999em;
+    padding-right: 80px;
+    padding-left: 5px;
 }
 
 .competences-section h2{
-    font-size: 50px;
+    font-size: 60px;
     text-transform: uppercase;
     text-align: center;
     color: #e4df5f;
-    font-weight: 700;
-    letter-spacing: 4px;
-    margin: 20px 0px;
+    font-weight: 800;
+    letter-spacing: 2px;
+   }
+
+.competences-section h4 {
+  font-size: 20px;
+  color: grey;
+  text-align: center;
+  font-style: italic;
 }
 
-.competences p {
-    line-height: 120%;
+.skills h3{
+    font-size: 20px;
+    text-transform: uppercase;
     text-align: left;
-    padding-right: 80px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0px;
+   }
+
+.skills p {
+    line-height: 130%;
+    text-align: left;
+    padding-right: 10px;
     padding-left: 0px;
     color: grey;
 }
 
-.competences-section hr {
-  border-bottom: 12px solid #e4df5f;
-  width: 42px;
+.skills hr {
+  border-bottom: 1px solid #e4df5f;
+  width: 100px;
   margin-left: 0px;
-}
-
-.competences line-separator{}
-  border-bottom: 18px solid #e4df5f;
-  width: absolute;
-  margin-left: 0px;
-}
-
-.competences-section .competences-detail {
-  border-radius: 4px;
-  border-bottom-right-radius: 20%;
-  background-color: #ffffff;
-  box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
-  transition: all 0.3s ease-in-out;
-  position: relative;
-  top: 0px;
-  padding: 60px 40px 60px 40px;
-  margin-top: 32px;
-}
-
-.competences-section .competences-detail:hover {
-  border-bottom-right-radius: 4px;
-  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
-  top: -5px;
-}
-
-.competences-section .competences-detail .fa {
-  font-size: 42px;
+  padding-bottom: 0px;  
 }
 
 
 
-/* Call to Action */
-
-.call-to-action {
-}
-
-.call-to-action h2 {
-	font-size: 30px;
-}
 
 
 
 /* Contact Us */
+
+.contact h2  {
+  color: white;
+}
+
+.contact p {
+  color: white;
+}
+
+.contact-us-detail a {
+  color: white;
+}
+
 
 .contact-us {
 	background-color: #f9f9f9;
@@ -730,12 +742,12 @@ body.loaded #preloader{
 }
 
 .contact-us-detail i {
-	 font-size: 30px;
+	font-size: 30px;
     margin-bottom: 10px;
     background-color: #fff;
     border-radius: 50%;
     box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
-	 transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
     width: 88px;
     height: 88px;
     line-height: 88px;
@@ -747,11 +759,13 @@ body.loaded #preloader{
   }
 
 .contact-us-detail a {
-	color: #333;
+	color:white;
+    font-size: 20px;
+    text-align: center;
 }
 
 .contact-us-detail a:hover {
-	color: #333;
+	color: #0fd28a;
 }
 
 
@@ -764,7 +778,11 @@ body.loaded #preloader{
   margin: 0;
   text-align: center;
   padding-top: 30px;
+  text-decoration-color: white;
+  color: white;
 }
+
+
 
 .social-icon:before,
 .social-icon:after {
@@ -783,14 +801,14 @@ body.loaded #preloader{
 
 .social-icon li a {
   display: block;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
   color: #fff;
   text-align: center;
   border: 0 none;
-  border-radius: 4px;
-  font-size: 30px;
+  border-radius: 40px;
+  font-size: 40px;
   box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
   transition: all 0.3s ease-in-out;
 }
@@ -811,56 +829,9 @@ body.loaded #preloader{
    background-color: #1da1f2;
 }
 
-.google-plus {
-   background-color: #dd4b39;
-}
-
-.instagram {
-   background-color: #464545;
-}
-
 .linkedin {
    background-color: #0077b5;
-}
-
-.pinterest {
-   background-color: #bd081c;
-}
-
-.youtube {
-   background-color: #cd201f;
-}
-
-.vimeo {
-   background-color: #1ab7ea;
-}
-
-.dribbble {
-   background-color: #ea4c89;
-}
-
-.behance {
-   background-color: #1769ff;
-}
-
-.flickr {
-   background-color: #ff0084;
-}
-
-.tumblr {
-   background-color: #35465c;
-}
-
-.foursquare {
-   background-color: #f94877;
-}
-
-.github {
-   background-color: #333333;
-}
-
-.skype {
-   background-color: #00aff0;
+    
 }
 
 

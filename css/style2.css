@@ -1,4 +1,4 @@
-.ad   
+  
    Table Of Content
    
    1. Global Style
@@ -527,57 +527,6 @@ body.loaded #preloader{
 
 
 
-/* PORTIFA (research related) */
-
-.portifa-new {
-  overflow: hidden;
-  background-color: #8b9dc3;
-  min-height: 200px;
-  max-height: 600px;
-}
-
-.portifa-new img {
-  position: relative;
-}
-
-.portifa-new {
-
-}
-
-.portifa-new h2 {
-  padding: 0px 50px;
-
-  color: white;
-  font-weight: 700px;
-}
-
-.portifa-new p {
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 10px;
-  line-height: 110%;
-  color: white;
-}
-
-.portifa-new ul {
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 15px;
-  line-height: 110%;
-  text-transform: bold;
-  text-transform: capitalize;
-  color: white;
-}
-
-.portifa-new li {
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 15px;
-  line-height: 110%;
-  text-transform: bold;
-    color: white;
-}
-
 <!-- PROJECT BOX -->
 
 .project-box {
@@ -588,38 +537,42 @@ body.loaded #preloader{
 }
 
 .project-box h1{
-  font-size: 16px;
+  font-size: 22px;
   text-transform: uppercase;
+  text-align: center;
+  padding: 80px;
+  padding-bottom: 40px;
 }
 
-.project-box .project-overlay {
+.project-overlay {
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
-  background-color: rgba(190, 76, 108, 0.5)
-  transition: all 0.3s;
-  -webkit-transition: all 0.3;
+  background-color: rgba(75,30,42,0.9);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2;
   opacity: 0;
+  border: 4px solid transparent; 
 }
-.project-box .project-overlay p {
-  font-size: 10px;
-  line-height: 50%;
-  position: absolute;
-  right: 30px;
-  bottom: 30px;
+
+.project-overlay p {
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center; 
+  right: 0px;
+  bottom: 00px;
   color: #fff;
 }
 
-.project-box .project-overlay ul li {
-  font-size: 10px;
-  line-height: 50%;
-  position: absolute;
-  right: 0px;
-  bottom: 30px;
-  color: #fff;
-}
+.project-overlay :hover {
+  font-style: bold;
+  color: yellow;
+  border-bottom: 1px solid ;
+
+} 
+
 
 .project-box:hover .project-overlay {
   opacity: 1;
@@ -649,13 +602,12 @@ body.loaded #preloader{
 .project-desc h4 {
   color: #fff;
   margin: 0;
-  position: relative;
+ 
   padding-bottom: 10px;
 }
 .project-desc h4:after {
   content: "";
   width: 20px;
-  position: absolute;
   left: 0;
   bottom: 5px;
   height: 3px;
@@ -687,7 +639,15 @@ body.loaded #preloader{
     font-weight: 700;
     letter-spacing: 4px;
     padding-left: 0px;
-    padding-top: 20px;
+    padding-top: 40px;
+    line-height: 50%
+}
+
+.ad hr {  
+  border-bottom: 10px solid #015311;
+  width: 75px;
+  margin-left: 218px;
+  
 }
 
 .ad h3 {
@@ -703,7 +663,7 @@ body.loaded #preloader{
     font-size: 12px;
     color: #015311;
     padding-left: 25px;
-    padding-right: 15px;
+    padding-right: 75px;
 }
 
 .ad a {
@@ -711,15 +671,14 @@ body.loaded #preloader{
     font-style: italic;    }
 
 .ad-image img{
-  
+  background-image: url(images/portfolio/workharder.jpg);
+  background-image: cover;
   }
 
 
 /* Services */
 .skills {
-    align-content: center;
-    align-items: center;
-    align-self: center;
+
      display: inline-block;
      width: 33.3330%;
      height: 100%;
@@ -728,7 +687,7 @@ body.loaded #preloader{
      margin-bottom: -999em;
      padding-bottom: 999em;
     padding-right: 80px;
-    padding-left: 3px;
+    padding-left: 5px;
 }
 
 .competences-section h2{
@@ -769,7 +728,7 @@ body.loaded #preloader{
   border-bottom: 1px solid #e4df5f;
   width: 100px;
   margin-left: 0px;
-  padding-bottom: 5px;  
+  padding-bottom: 0px;  
 }
 
 

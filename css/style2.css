@@ -1,6 +1,6 @@
- 
- This is Working
 
+ This is Working
+02.05.2017
 
 
 
@@ -516,6 +516,21 @@ body.loaded #preloader{
   overflow: hidden;
   display: none;
   height: 200px;
+  opacity: 1;
+}
+
+
+.project-box-wrap {
+  position: relative;
+  background: #be4c6c;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 200px;
+  border-top: 3px solid #1c3266;
+}
+
+.project-box-wrap .row {
+  margin: 10;
 }
 
 .project-box h1{
@@ -526,17 +541,23 @@ body.loaded #preloader{
   padding-bottom: 40px;
 }
 
+
 .project-overlay {
-  width: 100%;
+  width: 99%;
   height: 100%;
-  position: absolute;
-  left: 0;
+  position:absolute;
+  left: 1;
   top: 0;
   background-color: rgba(75,30,42,0.9);
   transition: all 0.2s;
   -webkit-transition: all 0.2;
   opacity: 0;
   border: 4px solid transparent; 
+}
+
+
+.project-box:hover .project-overlay  {
+  opacity: 1;
 }
 
 .project-overlay p {
@@ -548,32 +569,14 @@ body.loaded #preloader{
   color: #fff;
 }
 
+
 .project-overlay :hover {
   font-style: bold;
   color: yellow;
   border-bottom: 1px solid ;
-
+  opacity: 1;
 } 
 
-
-.project-box:hover .project-overlay {
-  opacity: 1;
-}
-
-.project-box-wrap {
-  position: relative;
-  background: #be4c6c;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 200px;
-  border-top: 3px solid #1c3266;
-}
-.project-box-wrap .row {
-  margin: 0;
-}
-.project-box-wrap .col-sm-6 {
-  padding: 5px;
-}
 
 .project-desc {
   padding: 10px 15px;
@@ -584,11 +587,10 @@ body.loaded #preloader{
 .project-desc h4 {
   color: #fff;
   margin: 0;
- 
   padding-bottom: 10px;
 }
 .project-desc h4:after {
-  content: "";
+  content: " ";
   width: 20px;
   left: 0;
   bottom: 5px;
@@ -606,10 +608,11 @@ body.loaded #preloader{
 
 
 .ad {
-    background-color: #f9f9f9;
+    
     transition: all 0.3s ease-in-out;
-    align-items: right;
     padding-bottom: 15px;
+    padding-top: 15px;
+    border: 6px solid #015311;
     
 }
 
@@ -621,7 +624,7 @@ body.loaded #preloader{
     font-weight: 700;
     letter-spacing: 4px;
     padding-left: 0px;
-    padding-top: 40px;
+    padding-top: 20px;
     line-height: 50%
 }
 
@@ -645,31 +648,46 @@ body.loaded #preloader{
     font-size: 12px;
     color: #015311;
     padding-left: 25px;
-    padding-right: 75px;
+    padding-right:25px;
 }
 
-.ad a {
-    text-transform: bold;
-    font-style: italic;    }
+.ad a:hover {
+    font-style: italic;
+    background-color: #015311;
+}
 
-.ad-image img{
-  background-image: url(images/portfolio/workharder.jpg);
-  background-image: cover;
-  }
+.ad-image img {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+ 
+}
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.ad-image:hover .overlay {
+  opacity: 1;
+}
 
 /* Services */
 .skills {
-
-     display: inline-block;
-     width: 33.3330%;
-     height: 100%;
-     max-height: absolute;
-     float: left;
-     margin-bottom: -999em;
-     padding-bottom: 999em;
+    display: inline-block;
     padding-right: 80px;
-    padding-left: 5px;
+    padding-left:25px;
+    align: center;
 }
 
 .competences-section h2{
@@ -691,7 +709,6 @@ body.loaded #preloader{
 .skills h3{
     font-size: 20px;
     text-transform: uppercase;
-    text-align: left;
     color: black;
     font-weight: 600;
     letter-spacing: 2px;
@@ -700,7 +717,6 @@ body.loaded #preloader{
 
 .skills p {
     line-height: 130%;
-    text-align: left;
     padding-right: 10px;
     padding-left: 0px;
     color: grey;
@@ -715,16 +731,20 @@ body.loaded #preloader{
 
 
 
-
+.hit-me {
+  background-color: rgba(0,0,0,0.3);
+  line-height: 50%;
+}
 
 
 /* Contact Us */
 
-.contact h2  {
+.hit-me h2  {
   color: white;
+    line-height: 50%;
 }
 
-.contact p {
+.hit-me p {
   color: white;
 }
 
@@ -738,7 +758,8 @@ body.loaded #preloader{
 }
 
 .contact-us-detail {
-  padding-left: 200px;
+    padding-top:15px;
+    line-height: 10%;
 }
 
 .contact-us-detail i {
@@ -773,11 +794,8 @@ body.loaded #preloader{
 
 .social-icon {
   list-style: none;
-  padding-left: 0;
-  padding-right: 80px;
   margin: 0;
   text-align: center;
-  padding-top: 30px;
   text-decoration-color: white;
   color: white;
 }

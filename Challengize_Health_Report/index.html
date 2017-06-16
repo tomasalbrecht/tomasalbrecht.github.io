@@ -5,8 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
+
+
 <style>
-body,h1,h2{font-family: "Roboto", sans-serif}
+body,h1,h2{font-family: "Roboto", sans-serif, text-transform: uppercase;}
 body, html {height: 100%}
 p {line-height: 2}
 .bgimg, .bgimg2 {
@@ -16,29 +20,50 @@ p {line-height: 2}
 }
 .bgimg {background-image: url("assets/images/swim2.png")}
 .bgimg2 {background-image: url("assets/images/corrida.png")}
+
+.bgimg2 {
+    min-height: 50%;
+    background-position: center;
+    background-size: cover;
+  }
+
+
 </style>
 <body>
 
 <!-- Header / Home-->
 <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+<div class="container">
   <div class="w3-display-middle w3-text-white w3-center">
-    <h1 class="w3-jumbo" style="text-transform: uppercase; font-style: bold; font-weight: 900">Challenges That Work </h1>
+    <h1 class="w3-jumbo" style="text-transform: uppercase; font-style: bold; font-weight: 600; font-size: 44px !important;">Challenges That Work </h1>
     <h2>How the exclusive Challengize Health Points can generate insights</h2>
     </div>
+    <div class="row" style="position: absolute; bottom: 0px; display: flex; justify-content: space-between; padding-bottom: 50px;" >
+        <div class="col-xs-4 col-md-4"">
+        <img src="assets/images/challengize.png" alt="Challengize Logo" style="max-width: 75%" />
+        </div>
+        <div class="col-xs-4 col-md-4"">
+        <img src="assets/images/Norrmejerier_logo.png" alt="Norrmejerier Logo" style="max-width: 75%" />
+        </div>
+        <div class="col-xs-4 col-md-4"">        
+        <img src="assets/images/prv_logo.png" alt="PRVård Logo" style="max-width: 75%"/>
+        </div>
+        </div>
+  </div>
   </div>
 </header>
 
 <!-- Navbar (sticky bottom) -->
 <div class="w3-bottom w3-hide-small">
   <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-    <a href="#hchallenges" style="width:25%" class="w3-bar-item w3-button">The Challenges</a>
+    <a href="#challenges" style="width:25%" class="w3-bar-item w3-button">The Challenges</a>
     <a href="#individual" style="width:25%" class="w3-bar-item w3-button">Individual Results</a>
     <a href="#Performances" style="width:25%" class="w3-bar-item w3-button">Quick Facts</a>
     <a href="#info" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Get in Touch!</a>
   </div>
 </div>
 
-<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="challenges">
+<div class="w3-container w3-padding-64 w3-pale-red " id="challenges" style="background-color: white;">
   <div class="w3-content">
     
     <p> Our Challenges are not just super fun and engaging. They are also an incredibly helpful tool for HR and managers to understand how motivated their teams are. We do it by using our Health Points, based on a Wellness Status Survey. We ask our participants how they feel regarding physical health, physical activity and general wellness. The survey is applied several times during a Challenge, so we can track the progression. 
@@ -51,18 +76,18 @@ p {line-height: 2}
 <!-- Background photo -->
 <div class="w3-display-container bgimg2">
   <div class="w3-display-middle w3-text-white w3-center">
-    <h1 class="w3-jumbo">The Challenges</h1><br>
+    <h1 class="w3-jumbo" style="text-transform: uppercase; font-size: 44px !important;">The Challenges</h1><br>
     <p> Norrmejerier ran their first ever Challenge for a 9 week period with 197 employees divided into 25 teams across the entire company. PR Vård engaged all their employees with 7 teams for a short 4 week Challenge. </p>
   </div>
 </div>
 
-<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="">
+<div class="w3-container w3-center" id="" style="background-color: rgba(202,16,18,0.8); border-bottom: 5px solid white; border-top: 5px solid white; padding-bottom:50px">
   <div class="w3-content">
-    <h1 class="w3-text-grey"><b> How did they do? </b></h1>
-     <div class="w3-row">
+    <h1 class="w3-text-white" style="text-transform: uppercase; padding: 25px 0px;"><b> How did they do? </b></h1>
+     <div class="w3-row" >
       <div class="w3-half" style="padding: 0px 35px 0px 35px;">
        <br> 
-        <p> The chart on the right shows the point increase when aggregating all the survey dimensions after their Challenge. The higher the number, the greater the increase in the team’s overall well-being. 
+        <p style="color: white"> The chart on the right shows the point increase when aggregating all the survey dimensions after their Challenge. The higher the number, the greater the increase in the team’s overall well-being. 
         <br><br>
         <b> As you can see a majority of the teams had a considerable increase in their well-being, with the top team increasing almost 60%! </b>
         <br><br>
@@ -76,36 +101,36 @@ p {line-height: 2}
 </div>
 
 
-<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="individual">
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="individual" style="border-bottom: 5px solid white; ">
   <div class="w3-content">
-    <h1 class="w3-text-grey"><b> What About Individual Dimensions?  </b></h1>
+    <h1 class="w3-text-grey" style="text-transform: uppercase; padding: 25px 0px;"><b> What About Individual Dimensions?  </b></h1>
     <div class="w3-row">
       <div class="none" style="padding: 0px 35px 0px 35px;">
-       <p class="lead" style="text-align: center; padding: 5px 65px 5px 65px;">
+       <p class="lead" style="text-align: center; ">
           Another benefit of our Health Points report is that they are broad. So you can identify exactly which dimension you need to pay more attention to. Is it general wellbeing? Is it health? Is it physical activities? And finding this is a helpful way to make your employees happier and more engaged. The next graph shows how the 3 dimensions progressed during the Challenge.
         </p> 
       </div>
       <div class="none">
                   <h3> Health Perception </h3>
-                  <img src="./assets/images/Graph2.png" alt="Health Perception" style="width: 50%; border: 10px solid transparent">
+                  <img src="assets/images/graph2.png" alt="Employee Health Perception Results"" style="width: 50%; border: 10px solid transparent">
 
                   <h3> Physical Activity </h3>              
-                  <img src="./assets/images/graph3.png" alt="Physical Activity " style="width: 50%; border: 10px solid transparent">
+                  <img src="assets/images/graph3.png" alt="Employee Physical Activity Results " style="width: 50%; border: 10px solid transparent">
                 
                   <h3> General Wellbeing </h3> 
-                  <img src="./assets/images/graph4.png" alt="General Wellbeing" style="width: 50%; border: 10px solid transparent">
+                  <img src="assets/images/graph4.png" alt="Employee Wellbeing Results" style="width: 50%; border: 10px solid transparent">
                 </div>
               </div>
       </div>
     </div>
 
 
-<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="Performances">
+<div class="w3-container w3-padding-64  w3-center" id="Performances" style="background-color: rgba(41, 73, 149,0.8); border-bottom: 5px solid white; border-top: 5px solid white; padding-bottom:50px">
   <div class="w3-content">
-    <h1 class="w3-text-grey"><b> The Companie's Performances  </b></h1>
+    <h1 class="w3-text-white" style="padding-bottom: 50px"><b> The Companie's Performances  </b></h1>
     <div class="w3-row">
       <div class="w3-half" style="padding: 0px 35px 0px 35px;">
-       <p class="lead" style="text-align: center; padding: 5px 65px 5px 65px;">
+       <p class="lead" style="text-align: center; padding: 5px 65px 5px 65px; color: white">
          On the left we can see how each company changed their scores in each dimension and also when aggregating all dimensions. <b> We can see the results were amazing! </b> Both companies had an increase of +20% when aggregating all dimensions, which means employees feeling more healthy and with increased levels of physical activity. 
         </p> 
       </div>
@@ -117,24 +142,24 @@ p {line-height: 2}
       </div>
     </div>
 
-<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="">
+<div class="w3-container w3-padding-64 w3-center" id="">
   <div class="w3-content">      <div class="none" style="padding: 0px 35px 0px 35px;">
        
       </div>
       <div class="none" style="display: inline-block;">
-              <div id="kettle">
+             <div class="col-xs-12 col-md-3" id="kettle">
                 <img src="assets/images/kettle.png" alt="Sample image" style="max-width: 25%" >
                 <h3 style="font-size: 30px;"> +70% increase in physical activity on the top team. </h3>
               </div>    
-              <div id="heart">
+              <div class="col-xs-12 col-md-3" id="heart">
                 <img src="assets/images/coracao.png" alt="Sample image" style="max-width: 25%">
                 <h3 style="font-size: 30px;">  16% increase  when all dimensions are add up .</h3>
               </div>
-              <div id="medal">  
+              <div class="col-xs-12 col-md-3" id="medal">  
                 <img src="assets/images/medal.png" alt="Sample image" style="max-width: 25%" >
                 <h3 style="font-size: 30px;">  92% of the teams with positive results </h3>
               </div>
-              <div id="norr">  
+              <div class="col-xs-12 col-md-3" id="norr">  
                 <img src="assets/images/Norrmejerier_logo.png" alt="Sample image" style="max-width: 25%" >
                 <h3 style="font-size: 30px;">  3381km registered  equivalent to <b> 92 complete marathons </b> </h3>
               </div>
@@ -143,8 +168,8 @@ p {line-height: 2}
     
 
 
-<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="info">
-  <h1>Do you want to learn more? Get in touch!</h1>
+<div class="w3-container w3-padding-64 w3-center w3-wide" id="info"  style="background-color: rgba(41, 73, 149,0.8); border-bottom: 5px solid white; border-top: 5px solid white; padding-bottom:50px">
+  <h1 style="color: white; font-weight: 500">Do you want to learn more? Get in touch!</h1>
 </div>
 
 <div class="alert" id="form_message" role="alert"></div>
@@ -184,15 +209,15 @@ p {line-height: 2}
 <!-- Footer -->
 <footer id="footer" style="background: #CA1012">
   <section class="container">
-    <div class="row" style=" display: flex; justify-content: space-between; padding-bottom: 50px;">
-        <div class="col-md-4">
-        <img src="assets/images/challengize.png" alt="Sample image" style="height: 70px; max-height: 70px; padding-top: 5px;">
+    <div class="row" style=" display: flex; justify-content: space-between; padding-bottom: 50px; margin:auto; vertical-align: middle;">
+        <div class="col-md-6 col-xs-6">
+        <img src="assets/images/challengize.png" alt="Challengize Logo" style="height: 70px; max-height: 70px; padding-top: 5px;">
         </div>
         
-        <div class="col-md-4">
-                <ul class="social-icon">
-                <li><a href="https://www.facebook.com/challengize" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/challengize/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+        <div class="col-md-6 col-xs-6">
+                <ul class="social-icon" style="display: flex; margin:auto; font-size:35px;  list-style-type: none">
+                <li style="color: white; margin:auto;"><a href="https://www.facebook.com/challengize" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                <li style="color: white; margin:auto;"><a href="https://www.linkedin.com/in/challengize/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
       <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
       <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-536ba34f3dab1f93"></script>          
